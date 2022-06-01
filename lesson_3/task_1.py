@@ -1,3 +1,5 @@
+
+
 def num_translate(num):
     nums = {
         'one': 'один',
@@ -15,5 +17,7 @@ def num_translate(num):
         return nums[num]
     else:
         return 'none'
+
+
 fun=num_translate(input('введите число\n'))
 print(fun)
