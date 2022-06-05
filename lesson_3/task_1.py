@@ -19,5 +19,5 @@ def num_translate(num):
         return 'none'
 
 
-fun=num_translate(input('введите число\n'))
+fun = num_translate(input())
 print(fun)
