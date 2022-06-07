@@ -9,8 +9,13 @@ response = requests.get(URL)
 dict_json = json.loads(response.text)
 #pprint.pprint(dict_json)
 
-while True:
-    start = dt.datetime.utcnow()
-    res = f" курс на {start.strftime('%H:%M:%S')} равен {dict_json['Valute']['EUR']['Value']}"
-    print(res)
-    time.sleep(5)
+
+def valute(val):
+    if val.apper() in dict_json:
+        start = dt.datetime.utcnow()
+        res = f"курс на {start.strftime('%H:%M:%S')} равен {dict_json['Valute'][val]['Value']}"
+        return res
+    else:
+        return 'none'
+x = valute(input())
+print(x)
