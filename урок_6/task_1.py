@@ -1,5 +1,4 @@
 import requests
-from collections import Counter
 
 URL = 'https://raw.githubusercontent.com/elastic/examples/master/Common%20Data%20Formats/nginx_logs/nginx_logs'
 
