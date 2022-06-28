@@ -14,7 +14,6 @@ def pars(log_line):
     request_type, log_line = log_line.split(' /')
     request_type = request_type.lstrip(' "')
     requested_resource, log_line = log_line.split(' HTTP')
-
     return remote_addr, request_type, requested_resource
 
 
