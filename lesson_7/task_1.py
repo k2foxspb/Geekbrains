@@ -7,8 +7,8 @@ def add_dir(director, *args):
         os.makedirs(directory_add)
 
 
-dict_add = ('my_project', 'settings', 'mainapp', 'admin_app', 'auth_app')
+turtle_add = ('my_project', 'settings', 'mainapp', 'admin_app', 'auth_app')
 
-for i in range(len(dict_add)):
-    add_dir(dict_add[0], dict_add[i])
+for i in range(len(turtle_add)):
+    add_dir(turtle_add[0], turtle_add[i])
     
